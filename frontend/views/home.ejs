@@ -1,0 +1,58 @@
+
+<% include header.ejs%>
+    <div class="col s10 right slider">
+
+            <ul class="slides">
+                <li>
+                    <img src="http://orig00.deviantart.net/8b09/f/2009/175/0/7/0714bdc795f7168a71f39b457c554fe4.jpg">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>Food Grabber</h3>
+                        <h5 class="light grey-text text-lighten-3">share food,help others</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://orig06.deviantart.net/05b8/f/2009/301/f/2/f2fbea5e76975bdbf017a0b02539f80f.jpg">
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>If you can't feed a hundred people, then feed just one.
+                        </h3>
+                        <h5 class="light grey-text text-lighten-3">-Mother Teresa</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img06.deviantart.net/e57e/i/2006/004/a/4/his_food_of_the_day_by_amour_etranger.jpg">
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Eating is so intimate. It's very sensual. When you invite someone to sit at your table and
+                            you want to cook for them, you're inviting a person into your life.
+                        </h3>
+                        <h5 class="light grey-text text-lighten-3">-Maya Angelou</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img13.deviantart.net/a9f4/i/2010/055/d/7/share_my_food_by_stamatisgr.jpg">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>So why waste food when you can give it to someone in need</h3>
+                        <h5 class="light grey-text text-lighten-3">it won't cost to help someone </h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+<script>
+    $(document).ready(function () {
+
+        $(".dropdown-button").dropdown({hover: false});
+
+        $(".button-collapse").sideNav();
+        $('.slider').slider({full_width:true, height: 600});
+        $('select').material_select();
+
+    })
+</script>
+</body>
+
+

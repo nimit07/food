@@ -1,0 +1,105 @@
+<%include header.ejs%>
+<div class="col s10 right">
+    <div class="row">
+        <div class="col s12 center">
+            <h2 class="white-text">Share Food</h2>
+        </div>
+    </div>
+    <div class="row">
+        <form id="share-form" class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="eventName" type="text" class="validate">
+                    <label for="eventName">Event Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="organiser" type="text" class="validate">
+                    <label for="organiser">Sharer's Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+
+                    <input id="capacity" type="range" min="0" max="100" />
+                    <label for="capacity">Max Capacity</label>
+                    </div>
+                <div class="input-field col s6">
+                    <select id="foodType">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="veg">Veg</option>
+                        <option value="non_veg">NonVeg</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <label>Food Type</label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="time" type="text" class="validate">
+                    <label for="time">Time</label>
+                </div>
+                <div class="input-field col s12">
+
+                    <input id="date" type="date" class="datepicker">
+                    <label for="date">Date</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="street" type="text" class="validate">
+                    <label for="street">Street</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="city" type="text" class="validate">
+                    <label for="city">City</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s3">
+                    <input id="dishName" type="text" class="validate">
+                    <label for="dishName">Dish Name</label>
+                </div>
+                <div class=" input-field col s3">
+                    <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="veg">Veg</option>
+                        <option value="non_veg">NonVeg</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <label>Dish Type</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class=" col s12 center">
+                    <button class="btn-large waves-effect waves-light" type="submit" name="action">Share
+                        <i class="material-icons right">send</i>
+                    </button><br>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+<script>
+    $(document).ready(function () {
+
+        $(".dropdown-button").dropdown({hover: false});
+
+        $(".button-collapse").sideNav();
+        $('.slider').slider({full_width:true, height: 600});
+        $('select').material_select();
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+
+    })
+</script>
+</body>
+</html>
